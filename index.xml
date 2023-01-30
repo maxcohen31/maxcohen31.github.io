@@ -5,7 +5,17 @@
     <link>https://maxcohen31.github.io/</link>
     <description>Recent content on Max&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://maxcohen31.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Jan 2023 11:36:25 +0100</lastBuildDate><atom:link href="https://maxcohen31.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux: system maintenance</title>
+      <link>https://maxcohen31.github.io/posts/first/</link>
+      <pubDate>Mon, 30 Jan 2023 11:36:25 +0100</pubDate>
+      
+      <guid>https://maxcohen31.github.io/posts/first/</guid>
+      <description>Having a Linux machine is like having a baby. I personally am not a father but the point is the same: they need love, kind of. I have been using Linux since 2014, my first distro was Ubuntu and instantaneosly fell in love with the terminal. Years passed by and after trying several distros i landed on Arch Linux.as many out there. The following is my daily maintenance of my Arch Linux system.</description>
+    </item>
+    
     <item>
       <title>About me</title>
       <link>https://maxcohen31.github.io/about/</link>
