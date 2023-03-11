@@ -6,7 +6,17 @@
     <description>Recent content on Max&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Jan 2023 11:36:25 +0100</lastBuildDate><atom:link href="https://maxcohen31.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 11:55:27 +0100</lastBuildDate><atom:link href="https://maxcohen31.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data structures: Linked List</title>
+      <link>https://maxcohen31.github.io/posts/data_structure1/</link>
+      <pubDate>Fri, 10 Mar 2023 11:55:27 +0100</pubDate>
+      
+      <guid>https://maxcohen31.github.io/posts/data_structure1/</guid>
+      <description>What is a linked list? A linked list is a widely used data structure in which, as the name suggests, the items are stored in a not contigous way. We can think about a linked list as a chain of what we are going to call nodes. Essentially the function of the node is quite simple: store a value or key and the address of the next node.
+Difference between array and linked list Arrays store elements in contigous way.</description>
+    </item>
+    
     <item>
       <title>Arch Linux: system maintenance</title>
       <link>https://maxcohen31.github.io/posts/first/</link>
