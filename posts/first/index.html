@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Arch Linux: system maintenance // Max&#39;s blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Emanuele Abbate" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Arch Linux: system maintenance"/>
+<meta name="twitter:description" content="Having a Linux machine is like having a baby. I personally am not a father but the point is the same: they need love, kind of. I have been using Linux since 2014, my first distro was Ubuntu and instantaneosly fell in love with the terminal. Years passed by and after trying several distros i landed on Arch Linux.as many out there. The following is my daily maintenance of my Arch Linux system."/>
+
+    <meta property="og:title" content="Arch Linux: system maintenance" />
+<meta property="og:description" content="Having a Linux machine is like having a baby. I personally am not a father but the point is the same: they need love, kind of. I have been using Linux since 2014, my first distro was Ubuntu and instantaneosly fell in love with the terminal. Years passed by and after trying several distros i landed on Arch Linux.as many out there. The following is my daily maintenance of my Arch Linux system." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://maxcohen31.github.io/posts/first/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-30T11:36:25+01:00" />
+<meta property="article:modified_time" content="2023-01-30T11:36:25+01:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://maxcohen31.github.io/"><img class="app-header-avatar" src="/img/picme.jpg" alt="Emanuele Abbate" /></a>
+      <span class="app-header-title">Max&#39;s blog</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/about/">About</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/">Home</a>
+      </nav>
+      <p>CS student | GNU/Linux enthusiast | Aspiring Data scientist</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/maxcohen31" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Arch Linux: system maintenance</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 30, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="heading"></h2>
+<p>Having a Linux machine is like having a baby. I personally am not a father but the point is the same: they need love, kind of. I have been using Linux since 2014, my first distro was Ubuntu and instantaneosly fell in love with the terminal. Years passed by and after trying several distros i landed
+on Arch Linux.as many out there.
+The following is my daily maintenance of my Arch Linux system.</p>
+<h2 id="updating-the-system">Updating the system</h2>
+<p>To update your Arch Linux system open your terminal and digit</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -Syu
+</span></span></code></pre></div><h2 id="logfiles">Logfiles</h2>
+<p>Log files store all the process that take place in your machine. They can be found in /var/log.
+To stream errors in log files we will use the journalctl command that manipulates the data collected by journald daemon.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo journalctl -p <span style="color:#ae81ff">3</span> -xb
+</span></span></code></pre></div><ul>
+<li><strong>-p</strong> : priorities, 3 stands for &rsquo;error'.</li>
+<li><strong>-x</strong>: add explanatory messages if avaiable</li>
+<li><strong>-b</strong>: boot. No entries means last booted system</li>
+</ul>
+<p>Size of journal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>du -sh /var/log/journal
+</span></span></code></pre></div><p>To clean journal entries by time</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo journalctl --vacuum-time<span style="color:#f92672">=</span>3weeks
+</span></span></code></pre></div><p>If you want to automatize the process i share a simple script i wrote time ago</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#! /bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>journalpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/var/log/journal/&#39;</span>
+</span></span><span style="display:flex;"><span>action<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>du -sh $journalpath | awk <span style="color:#e6db74">&#39;{print $1}&#39;</span> | cut -d M -f1<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $action -gt <span style="color:#ae81ff">500</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  journal --vacumm-time<span style="color:#f92672">=</span>2weeks
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Space under 500M&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><p>You can set the size limit to the system journal by editing the file /etc/systemd/journald.conf.
+Search for the voice #SystemMaxUse=, uncomment it and set a size limit</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>SystemMaxUse<span style="color:#f92672">=</span>200M 
+</span></span></code></pre></div><h2 id="pacman-cache">Pacman cache</h2>
+<p>Pacman is the packet manager of Arch Linux and derived distros. Pacman packages can be found in /var/cache/pacman/pkg. Since pacman does not remove old packages we need a script called <strong>paccache</strong>.
+To perform a dryrun</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo paccache -dr
+</span></span></code></pre></div><p>to remove packages</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo paccache -r
+</span></span></code></pre></div><p>The above command keeps all the three recent versions of your installed packages and delete the older ones. If you want to keep the last two versions you can type</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo paccache -rk2
+</span></span></code></pre></div><h2 id="cache-directory">Cache directory</h2>
+<p>You can print the size of your .cache directory using the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>du -sh ~/.cache
+</span></span></code></pre></div><p>To find elements by time and delete them you can run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find ~/.cache -type f -atime +&lt;number of days&gt; -delete
+</span></span></code></pre></div><p>Usually it is safe to free .cache space. Just be careful about the softwares installed.</p>
+<h2 id="bleachbit">Bleachbit</h2>
+<p>Bleachbit is a free and open source privacy oriented tool used for cleaning disks.
+Install bleachbit</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S bleachbit
+</span></span></code></pre></div><h2 id="in-conclusion">In conclusion</h2>
+<p>These are simple recommendations to maintain your Arch distro. I hope people can find this guide useful and if you would like to share your thoughts feel free to contact me.
+You can find more about Arch maintenance here: <a href="https://wiki.archlinux.org/title/system_maintenance">https://wiki.archlinux.org/title/system_maintenance</a>.
+See you soon!</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
