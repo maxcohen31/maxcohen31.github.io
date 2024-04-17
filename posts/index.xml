@@ -6,55 +6,42 @@
     <description>Recent content in Posts on Max&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Sep 2023 14:25:27 +0200</lastBuildDate><atom:link href="https://maxcohen31.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Sep 2023 14:25:27 +0200</lastBuildDate>
+    <atom:link href="https://maxcohen31.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>An introduction to systemd timers</title>
       <link>https://maxcohen31.github.io/posts/timers/</link>
       <pubDate>Sat, 16 Sep 2023 14:25:27 +0200</pubDate>
-      
       <guid>https://maxcohen31.github.io/posts/timers/</guid>
-      <description>Scheduling tasks in Linux If you are a sysadmin or a Linux enthusiast automating the boring stuff is crucial. Systemd timers are a powerful tool Linux provides you to schedule a certain task.
-Systemd timers Systemd timers are unit files. A unit file is a ini-style text plain file that encodes information about a service. Units are essentially resources systemd know how to deal with. Whether you want to modify a function or add one you can do it in the /etc/systemd/system directory.</description>
+      <description>Scheduling tasks in Linux If you are a sysadmin or a Linux enthusiast automating the boring stuff is crucial. Systemd timers are a powerful tool Linux provides you to schedule a certain task.&#xA;Systemd timers Systemd timers are unit files. A unit file is a ini-style text plain file that encodes information about a service. Units are essentially resources systemd know how to deal with. Whether you want to modify a function or add one you can do it in the /etc/systemd/system directory.</description>
     </item>
-    
     <item>
       <title>UNIX Inodes</title>
       <link>https://maxcohen31.github.io/posts/unix_inodes/</link>
       <pubDate>Sun, 18 Jun 2023 10:20:22 +0200</pubDate>
-      
       <guid>https://maxcohen31.github.io/posts/unix_inodes/</guid>
-      <description>In 1969 at Bell Labs a revolution was brought to the world: the UNIX operating system. Talking about Unix itself would not take an entire post but a full dedicated blog. I will only write down about one of the fundamentals of a Unix-like system: Inodes.
-What is an inode? The structure that identifies univocally a file within the filesystem is called inode. Since in Unix-like systems &amp;ldquo;everything is a file&amp;rdquo; each file is associated with an inode.</description>
+      <description>In 1969 at Bell Labs a revolution was brought to the world: the UNIX operating system. Talking about Unix itself would not take an entire post but a full dedicated blog. I will only write down about one of the fundamentals of a Unix-like system: Inodes.&#xA;What is an inode? The structure that identifies univocally a file within the filesystem is called inode. Since in Unix-like systems &amp;ldquo;everything is a file&amp;rdquo; each file is associated with an inode.</description>
     </item>
-    
     <item>
       <title>About a girl</title>
       <link>https://maxcohen31.github.io/posts/about_a_girl/</link>
       <pubDate>Thu, 30 Mar 2023 10:31:14 +0200</pubDate>
-      
       <guid>https://maxcohen31.github.io/posts/about_a_girl/</guid>
-      <description>Hey, how&amp;rsquo;s going everybody?
-Emanuele here, and as the title suggests this post has nothing to do with programming. In the first place i didn&amp;rsquo;t want to write it simply because i was feeling uncomfortable. What made me change my mind then? Since the article talks about a person i used to be a close friend with like a brother-sister friendship, how i fucked up everything and how i&amp;rsquo;ve never had the possibility to aks her sorry i thought that, perhaps, writing about it would have been my &amp;ldquo;redemption&amp;rdquo;.</description>
+      <description>Hey, how&amp;rsquo;s going everybody?&#xA;Emanuele here, and as the title suggests this post has nothing to do with programming. In the first place i didn&amp;rsquo;t want to write it simply because i was feeling uncomfortable. What made me change my mind then? Since the article talks about a person i used to be a close friend with like a brother-sister friendship, how i fucked up everything and how i&amp;rsquo;ve never had the possibility to aks her sorry i thought that, perhaps, writing about it would have been my &amp;ldquo;redemption&amp;rdquo;.</description>
     </item>
-    
     <item>
       <title>Data structures: Linked List</title>
       <link>https://maxcohen31.github.io/posts/data_structure1/</link>
       <pubDate>Fri, 10 Mar 2023 11:55:27 +0100</pubDate>
-      
       <guid>https://maxcohen31.github.io/posts/data_structure1/</guid>
-      <description>What is a linked list? A linked list is a widely used data structure in which, as the name suggests, the items are stored in a not contigous way. We can think about a linked list as a chain of what we are going to call nodes. Essentially the function of the node is quite simple: store a value or key and the address of the next node.
-Difference between arrays and linked lists Arrays store elements in contigous way.</description>
+      <description>What is a linked list? A linked list is a widely used data structure in which, as the name suggests, the items are stored in a not contigous way. We can think about a linked list as a chain of what we are going to call nodes. Essentially the function of the node is quite simple: store a value or key and the address of the next node.&#xA;Difference between arrays and linked lists Arrays store elements in contigous way.</description>
     </item>
-    
     <item>
       <title>Arch Linux: system maintenance</title>
       <link>https://maxcohen31.github.io/posts/first/</link>
       <pubDate>Mon, 30 Jan 2023 11:36:25 +0100</pubDate>
-      
       <guid>https://maxcohen31.github.io/posts/first/</guid>
       <description>Having a Linux machine is like having a baby. I personally am not a father but the point is the same: they need love, kind of. I have been using Linux since 2014, my first distro was Ubuntu and instantaneosly fell in love with the terminal. Years passed by and after trying several distros i landed on Arch Linux.as many out there. The following is my daily maintenance of my Arch Linux system.</description>
     </item>
-    
   </channel>
 </rss>

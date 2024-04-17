@@ -4,15 +4,14 @@
     <title>Data structures: Linked List // Max&#39;s blog</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Hugo 0.124.1">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Emanuele Abbate" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
 
     
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Data structures: Linked List"/>
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Data structures: Linked List"/>
 <meta name="twitter:description" content="What is a linked list? A linked list is a widely used data structure in which, as the name suggests, the items are stored in a not contigous way. We can think about a linked list as a chain of what we are going to call nodes. Essentially the function of the node is quite simple: store a value or key and the address of the next node.
 Difference between arrays and linked lists Arrays store elements in contigous way."/>
 
@@ -148,7 +147,7 @@ Difference between arrays and linked lists Arrays store elements in contigous wa
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> node;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="insert-head-in-the-linked-list">Insert head in the linked list</h2>
+</span></span></code></pre></div><h2 id="insertion-at-the-beginning-of-the-list">Insertion at the beginning of the list</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> LinkedList<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;::</span>InsertHead(T val)
 </span></span><span style="display:flex;"><span>{   
@@ -164,7 +163,7 @@ Difference between arrays and linked lists Arrays store elements in contigous wa
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    node<span style="color:#f92672">-&gt;</span>next <span style="color:#f92672">=</span> head;
 </span></span><span style="display:flex;"><span>    node <span style="color:#f92672">=</span> head;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="insert-tail-in-the-linked-list">Insert tail in the linked list</h2>
+</span></span></code></pre></div><h2 id="insertion-at-the-end-of-the-list">Insertion at the end of the list</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> LinkedList<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;::</span>InsertTail(T val)
 </span></span><span style="display:flex;"><span>{
@@ -187,7 +186,7 @@ Difference between arrays and linked lists Arrays store elements in contigous wa
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    tail <span style="color:#f92672">=</span> node;
 </span></span><span style="display:flex;"><span>    count_elements<span style="color:#f92672">++</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="insert-node-in-a-linked-list-at-given-index">Insert node in a linked list at given index</h2>
+</span></span></code></pre></div><h2 id="insert-a-node-at-a-specific-index">Insert a node at a specific index</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> LinkedList<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;::</span>Insert(<span style="color:#66d9ef">int</span> index, T val)
 </span></span><span style="display:flex;"><span>{
