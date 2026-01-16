@@ -1,29 +1,49 @@
-/* Sfondo */
-body {
-  background-color: #121212 !important;
+/* Dark mode styles */
+html.dark body {
+  background-color: #121212;
 }
 
-/* Titoli */
-h1, h2, h3, h4, h5, h6,
-.text-neutral-900,
-.text-gray-900,
-.text-black {
+/* Titles - more comprehensive selector */
+html.dark h1, 
+html.dark h2, 
+html.dark h3, 
+html.dark h4, 
+html.dark h5, 
+html.dark h6 {
   color: #f1f1f1 !important;
 }
 
-/* Testo generale */
-body, p, li, span, .prose {
-  color: #d0d0d0 !important;
+/* Neutral/gray text classes */
+html.dark .text-neutral-900,
+html.dark .text-neutral-800,
+html.dark .text-neutral-700,
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-black {
+  color: #f1f1f1 !important;
 }
 
-/* Link */
-a {
-  color: #80d4ff !important;
+/* General text */
+html.dark body, 
+html.dark p, 
+html.dark li, 
+html.dark span, 
+html.dark .prose,
+html.dark article {
+  color: #d0d0d0;
 }
 
-/* Card o contenitori */
-.card, .box, .content, .article-container {
-  background-color: #1a1a1a !important;
-  color: #e0e0e0 !important;
+/* Links */
+html.dark a {
+  color: #80d4ff;
 }
 
+/* Cards and containers */
+html.dark .card, 
+html.dark .box, 
+html.dark .content, 
+html.dark .article-container {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
