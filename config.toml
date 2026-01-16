@@ -1,0 +1,36 @@
+baseURL = 'https://maxcohen31.github.io/'
+languageCode = 'en-us'
+#title = "Max's blog"
+metaDataFormat = "yaml"
+theme = "blowfish"
+ignoreErrors = ["error-disable-taxonomy"]
+
+[params.author]
+menu_item_separator = " | "
+description = "CS student | GNU/Linux enthusiast | Aspiring Data scientist"
+avatar = "/img/picme.jpg"
+
+[params]
+  customCSS = ["css/custom.css"]
+
+colorScheme = "neon"
+defaultAppearance = "light"
+autoSwitchAppearance = false
+
+[[menu.main]]
+name = "Home"
+url = "/"
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+
+[[menu.main]]
+name = "Posts"
+url = "/posts/"
+
+[params.social]
+icon = "github"
+name = "Github"
+url = "https://github.com/maxcohen31"
+

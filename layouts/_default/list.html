@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="post-list" style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+
+    {{ range .Pages.ByDate.Reverse }}
+      <article style="margin-bottom: 2rem;">
+        <h2 style="margin-bottom: 0.3rem; font-size: 1.4rem;">
+          <a href="{{ .RelPermalink }}" style="text-decoration: none; color: #2a2a2a;">{{ .Title }}</a>
+        </h2>
+        <p style="color: #666; font-size: 0.9rem;">📅 {{ .Date.Format "02 Jan 2006" }}</p>
+        {{ with .Params.description }}
+          <p style="color: #333; font-size: 1rem;">{{ . }}</p>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+{{ end }}

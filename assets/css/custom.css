@@ -1,0 +1,29 @@
+/* Sfondo */
+body {
+  background-color: #121212 !important;
+}
+
+/* Titoli */
+h1, h2, h3, h4, h5, h6,
+.text-neutral-900,
+.text-gray-900,
+.text-black {
+  color: #f1f1f1 !important;
+}
+
+/* Testo generale */
+body, p, li, span, .prose {
+  color: #d0d0d0 !important;
+}
+
+/* Link */
+a {
+  color: #80d4ff !important;
+}
+
+/* Card o contenitori */
+.card, .box, .content, .article-container {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+}
+

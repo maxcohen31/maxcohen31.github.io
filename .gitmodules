@@ -1,0 +1,10 @@
+[submodule "maxcohen31.github.io"]
+	path = maxcohen31.github.io
+	url = https://github.com/maxcohen31/maxcohen31.github.io.git
+[submodule "public"]
+	path = public
+	url = https://github.com/maxcohen31/maxcohen31.github.io.git
+[submodule "themes/blowfish"]
+	path = themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git
+	branch = main
