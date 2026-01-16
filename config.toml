@@ -13,10 +13,6 @@ avatar = "/img/picme.jpg"
 [params]
   customCSS = ["css/custom.css"]
 
-colorScheme = "neon"
-defaultAppearance = "light"
-autoSwitchAppearance = false
-
 [[menu.main]]
 name = "Home"
 url = "/"
