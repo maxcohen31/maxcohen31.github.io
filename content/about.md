@@ -8,8 +8,10 @@ layout: "simple"
   
   <div class="max-w-2xl">
     <p class="text-lg leading-relaxed">
-      I'm a Computer Science student at University of Pisa. I love mathematics and the C language.
-      This blog is just my digital garden.
-    </p>
+  I'm a Computer Science student at <a href="https://di.unipi.it/" target="_blank" rel="noopener">@unipi</a>.<br> 
+  I love mathematics and my favourite programming languages are OCaml and C.<br>
+  I run a lot... :)
+</p>
+
   </div>
 </div>
