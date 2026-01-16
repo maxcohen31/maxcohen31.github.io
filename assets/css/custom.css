@@ -47,3 +47,24 @@ html.dark .article-container {
   background-color: #1a1a1a;
   color: #e0e0e0;
 }
+
+/* Fix post/card titles in dark mode */
+html.dark h1 a,
+html.dark h2 a,
+html.dark h3 a,
+html.dark h4 a,
+html.dark h5 a,
+html.dark h6 a {
+    color: #ffffff !important; /* bright white for readability */
+}
+
+/* Optional: slightly adjust hover to keep visual feedback */
+html.dark h1 a:hover,
+html.dark h2 a:hover,
+html.dark h3 a:hover,
+html.dark h4 a:hover,
+html.dark h5 a:hover,
+html.dark h6 a:hover {
+    color: #80d4ff !important;
+}
+
