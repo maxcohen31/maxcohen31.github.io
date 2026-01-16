@@ -1,64 +1,83 @@
-/* Dark mode styles */
+/* =========================
+   LIGHT MODE (default)
+========================= */
+body, 
+article, 
+.prose, 
+.post-content, 
+.post-content p, 
+.post-content li, 
+.post-content span,
+.post-content strong,
+.post-content em {
+    color: #000000 !important;   /* black text */
+}
+
+nav a, 
+.header a, 
+a.read-more, 
+.post-meta span, 
+.post-meta a, 
+.post-meta span.post-date, 
+.post-meta span.author,
+.post-title a {
+    color: #000000 !important;   /* black for nav, links, post meta */
+}
+
+/* =========================
+   DARK MODE
+========================= */
 html.dark body {
-  background-color: #121212;
+    background-color: #121212 !important;
+    color: #d0d0d0 !important;   /* general text */
 }
 
-/* Titles - more comprehensive selector */
-html.dark h1, 
-html.dark h2, 
-html.dark h3, 
-html.dark h4, 
-html.dark h5, 
-html.dark h6 {
-  color: #f1f1f1 !important;
-}
-
-/* Neutral/gray text classes */
-html.dark .text-neutral-900,
-html.dark .text-neutral-800,
-html.dark .text-neutral-700,
-html.dark .text-gray-900,
-html.dark .text-gray-800,
-html.dark .text-gray-700,
-html.dark .text-black {
-  color: #f1f1f1 !important;
-}
-
-/* General text */
-html.dark body, 
-html.dark p, 
-html.dark li, 
-html.dark span, 
-html.dark .prose,
-html.dark article {
-  color: #d0d0d0;
-}
-
-/* Links */
-html.dark a {
-  color: #80d4ff;
-}
-
-/* Cards and containers */
-html.dark .card, 
-html.dark .box, 
-html.dark .content, 
-html.dark .article-container {
-  background-color: #1a1a1a;
-  color: #e0e0e0;
-}
-
-/* Fix post/card titles in dark mode */
+/* Titles inside dark mode posts/cards */
 html.dark h1 a,
 html.dark h2 a,
 html.dark h3 a,
 html.dark h4 a,
 html.dark h5 a,
 html.dark h6 a {
-    color: #ffffff !important; /* bright white for readability */
+    color: #ffffff !important;
 }
 
-/* Optional: slightly adjust hover to keep visual feedback */
+html.dark .post-meta span,
+html.dark .post-meta a,
+html.dark .post-meta span.post-date,
+html.dark .post-meta span.author {
+    color: #ffffff !important;
+}
+
+html.dark a,
+html.dark a.read-more,
+html.dark nav a,
+html.dark .header a {
+    color: #80d4ff !important;   /* bright links in dark mode */
+}
+
+/* General post content in dark mode */
+html.dark article,
+html.dark .prose,
+html.dark .post-content,
+html.dark .post-content p,
+html.dark .post-content li,
+html.dark .post-content span,
+html.dark .post-content strong,
+html.dark .post-content em {
+    color: #e0e0e0 !important;
+}
+
+/* Cards / containers */
+html.dark .card,
+html.dark .box,
+html.dark .content,
+html.dark .article-container {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Hover effect for titles in dark mode */
 html.dark h1 a:hover,
 html.dark h2 a:hover,
 html.dark h3 a:hover,
