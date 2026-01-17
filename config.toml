@@ -7,7 +7,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params.author]
 menu_item_separator = " | "
-description = "CS student | GNU/Linux enthusiast | Aspiring Data scientist"
+description = "Computer Science student"
 avatar = "/img/picme.jpg"
 
 [params]
