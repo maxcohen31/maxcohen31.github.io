@@ -1,6 +1,36 @@
 /* =========================
    LIGHT MODE (default)
 ========================= */
+
+/* Main navigation menu items - more specific selectors for Blowfish */
+nav a, 
+.header a,
+header nav a,
+.main-menu a,
+#menu a,
+.menu a,
+a.read-more, 
+.post-meta span, 
+.post-meta a, 
+.post-meta span.post-date, 
+.post-meta span.author,
+.post-title a {
+    color: #000000 !important;   /* black for nav, links, post meta */
+}
+
+/* Blowfish specific navigation classes */
+.menu-item a,
+nav ul li a,
+.nav-link,
+header a[href],
+.appearance-toggle,
+.bf-icon-color-hover,
+a.bf-icon-color-hover,
+.bf-icon-color-hover span {
+    color: #000000 !important;
+}
+
+/* Body and content text */
 body, 
 article, 
 .prose, 
@@ -13,20 +43,20 @@ article,
     color: #000000 !important;   /* black text */
 }
 
-nav a, 
-.header a, 
-a.read-more, 
-.post-meta span, 
-.post-meta a, 
-.post-meta span.post-date, 
-.post-meta span.author,
-.post-title a {
-    color: #000000 !important;   /* black for nav, links, post meta */
+/* Override any hover states that might show blue */
+nav a:hover,
+.header a:hover,
+.menu-item a:hover,
+nav ul li a:hover,
+.bf-icon-color-hover:hover,
+a.bf-icon-color-hover:hover {
+    color: #333333 !important;  /* slightly lighter on hover */
 }
 
 /* =========================
    DARK MODE
 ========================= */
+
 html.dark body {
     background-color: #121212 !important;
     color: #d0d0d0 !important;   /* general text */
@@ -49,11 +79,19 @@ html.dark .post-meta span.author {
     color: #ffffff !important;
 }
 
+/* Dark mode navigation - bright links */
 html.dark a,
 html.dark a.read-more,
 html.dark nav a,
-html.dark .header a {
-    color: #80d4ff !important;   /* bright links in dark mode */
+html.dark .header a,
+html.dark .menu-item a,
+html.dark nav ul li a,
+html.dark .nav-link,
+html.dark header a[href],
+html.dark .bf-icon-color-hover,
+html.dark a.bf-icon-color-hover,
+html.dark .bf-icon-color-hover span {
+    color: #ffffff !important;   /* bright links in dark mode */
 }
 
 /* General post content in dark mode */
@@ -87,3 +125,12 @@ html.dark h6 a:hover {
     color: #80d4ff !important;
 }
 
+/* Dark mode navigation hover */
+html.dark nav a:hover,
+html.dark .header a:hover,
+html.dark .menu-item a:hover,
+html.dark nav ul li a:hover,
+html.dark .bf-icon-color-hover:hover,
+html.dark a.bf-icon-color-hover:hover {
+    color: #a8e0ff !important;  /* slightly brighter on hover */
+}
